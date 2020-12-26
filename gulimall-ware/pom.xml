@@ -8,6 +8,26 @@
     <artifactId>gulimall-ware</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <artifactId>gulimall</artifactId>
+        <groupId>top.hellooooo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>top.hellooooo</groupId>
+            <artifactId>gulimall-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
