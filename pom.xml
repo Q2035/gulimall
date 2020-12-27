@@ -10,12 +10,6 @@
     <description>聚合服务</description>
     <packaging>pom</packaging>
 
-    <parent>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>Hoxton.SR9</version>
-    </parent>
-
     <modules>
         <module>gulimall-coupon</module>
         <module>gulimall-ware</module>
@@ -26,6 +20,14 @@
         <module>renren-generator</module>
         <module>gulimall-common</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-parent</artifactId>
+            <version>Hoxton.SR9</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
