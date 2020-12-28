@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-parent</artifactId>
-            <version>Hoxton.SR9</version>
+            <version>Hoxton.SR6</version>
         </dependency>
     </dependencies>
 
