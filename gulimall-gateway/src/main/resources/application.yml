@@ -1,0 +1,17 @@
+server:
+  port: 88
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: route_test
+          uri: https://hellooooo.top
+          predicates:
+#            localhost:88/url=hello 跳转到指定uri
+            - Query=url,hello
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api(?<segment>/?.*), /renren-fast/$\{segment}
